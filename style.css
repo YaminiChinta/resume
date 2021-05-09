@@ -154,10 +154,7 @@
     font-size: 15px;
     color: gray;
 }
-.keycourses h1{
-    font-weight: bold;
-    color: black;
-}
+
 .right-area{
     width: 70%;
     padding: 50px;
@@ -217,7 +214,20 @@
     font-weight: bold;
     color: black;
 }
-
+.keycourses h1{
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+}
+.keycourses li{
+    margin-left: 70px;
+    font-size: 15px;
+}
+.keycourses .keygrp{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:  10px;   
+}
 
 .hobbies h3{
     font-weight: bold;
