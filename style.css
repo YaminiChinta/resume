@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.print-area{
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 5px 5px 10px 10px rgba(141, 141, 141, 0.5);
+}
+.print-area .header{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(13, 21, 56);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 65px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 10px rgba(211, 207, 207, 0.301);
+    cursor: pointer;
+    transition: .5s;
+    user-select: none;
+    filter: grayscale(1 0%);
+}
+.header img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 20px rgb(0,0,0,0.5);
+}
+.header-text{
+    width: 60%;
+    color: white;
+    margin-left: auto;
+}
+.header-text .h1{
+    font-size: 780px;
+    font-weight: normal;
+}
+.header-text p{
+    font-size: 20px;
+    color: lightgray;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-area{
+    width: 30%;
+    background-color: lightgray;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.contact {
+    margin-top: 130px;
+    padding: 0 30px;
+}
+.contact h4{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    margin: 20px 0;
+}
+.contact h5{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.contact p{
+    font-size: 17px;
+
+}
+.skills{
+    margin-top:30px;
+}
+.skills h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+.bars{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px 10px;
+    padding: 0 20px;
+}
+.bar p{
+    font-size: 15px;
+    font-weight: bold;
+}
+.bar span{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(85, 84, 84);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.bar span::before{
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+.bar .html::before{
+    width: 65%;
+}
+.bar .js::before{
+    width: 35%;
+}
+.bar .mysql::before{
+    width: 60%;
+}
+.bar .cpp::before{
+    width: 70%;
+}
+.bar .java::before{
+    width: 50%;
+}
+.bar .python::before{
+    width: 60%;
+}
+.bar .app::before{
+    width: 70%;
+}
+.bar .ds::before{
+    width: 70%;
+}
+.follow h1{
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+.follow h4{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.follow p{
+    font-size: 15px;
+    color: gray;
+}
+.keycourses h1{
+    font-weight: bold;
+    color: black;
+}
+.right-area{
+    width: 70%;
+    padding: 50px;
+    background-color: rgb(224, 224, 224);
+    color: black;
+}
+.right-area .about h1{
+    font-size: 40spx;
+    font-weight: bold;
+    color: black;
+}
+.right-area  h1 span{
+    margin-right: 30px;
+    font-size: 30px;
+    color: rgb(63, 60, 60);
+}
+.right-area p{
+    padding-left: 70px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 17px;
+    color: rgb(56, 55, 55);
+}
+.project-group{
+    margin: 20px 0;
+}
+.project h1{
+    font-weight: bold;
+    color: black;
+}
+.project .project-group{
+    position: relative;
+}
+.project-group h3{
+    font-size: 22px;
+    font-weight: normal;
+    padding-left: 70px;
+}
+.project-group h4{
+    font-size: 15px;
+    font-weight: normal;
+    padding-left: 70px;color: lightgray;
+}
+.project-group h5{
+    top: 10px;
+    padding-left: 85px;
+    font-size: 15px;
+}
+.table{
+    margin-left: 50px;
+}
+.education span{
+    color: gray;
+    font-size: 50px;
+}
+.edu-group h1{
+    font-weight: bold;
+    color: black;
+}
+
+.achievements h1{
+    font-weight: bold;
+    color: black;
+}
+.ach-group h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    margin-left: 60px;
+}
+.hobbies h3{
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+}
+.hobbies .hobbies-grp{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:  10px;
+    padding-left: 50px;
+    color: rgb(41, 39, 39);
+    font-size: 18px;
+}
+.hobbies span{
+    margin-right: 30px;
+    font-size: 25px;
+    color: rgb(48, 47, 47);
+}
+
