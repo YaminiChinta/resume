@@ -238,7 +238,7 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap:  10px;
-    padding-left: 50px;
+    padding-left: 70px;
     color: rgb(41, 39, 39);
     font-size: 18px;
 }
